@@ -289,7 +289,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onNavigate })
                 <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500">
                   <span>{rel.readingTime}</span>
                   <span className="text-[#143826] font-semibold group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-0.5">
-                    Read Guide →
+                    Read {rel.category} Guide →
                   </span>
                 </div>
               </div>

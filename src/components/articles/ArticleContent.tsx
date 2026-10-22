@@ -50,7 +50,28 @@ const BudgetingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
         At its core, a budget is an intentional blueprint for your money. Far too often, newcomers approach budgeting with feelings of dread or guilt, assuming it represents financial punishment. In reality, a budget provides financial clarity. Instead of wondering where your paycheck vanished at the end of each month, your budget tells your money where to go beforehand.
       </p>
       <p>
-        In personal finance education, financial planners emphasize that budgeting is descriptive and forward-looking, not judgmental. It reflects your personal values, whether that means prioritizing debt elimination, establishing an emergency fund, or saving for higher education.
+        In personal finance education, financial planners emphasize that budgeting is descriptive and forward-looking, not judgmental. It reflects your personal values, whether that means{' '}
+        <button
+          onClick={() => onNavigate('/debt-management/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          prioritizing debt management and elimination
+        </button>
+        , establishing a{' '}
+        <button
+          onClick={() => onNavigate('/emergency-fund-guide/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          starter emergency fund for beginners
+        </button>
+        , or eventually learning how to{' '}
+        <button
+          onClick={() => onNavigate('/investing-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          start investing in broad index funds
+        </button>
+        .
       </p>
 
       <h3 className="text-xl font-editorial-serif font-bold text-stone-900 mt-8 mb-3">
@@ -64,8 +85,14 @@ const BudgetingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
       </p>
       <ul className="list-disc pl-6 space-y-2 my-4 text-stone-700">
         <li><strong>Reduces daily financial anxiety:</strong> Knowing your rent, utilities, and grocery bills are accounted for eliminates late-night financial stress.</li>
-        <li><strong>Prevents toxic revolving debt:</strong> By assigning an emergency allocation, you avoid leaning on high-interest credit cards for routine surprises.</li>
-        <li><strong>Accelerates personal goals:</strong> Whether you want to travel, buy a vehicle, or begin investing, deliberate budgeting turns distant dreams into line items with clear timelines.</li>
+        <li><strong>Prevents toxic revolving debt:</strong> By assigning an emergency allocation, you avoid leaning on high-interest credit cards for routine surprises and preserve your{' '}
+        <button
+          onClick={() => onNavigate('/credit-score-basics/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          credit score rating and payment history
+        </button>.</li>
+        <li><strong>Accelerates personal goals:</strong> Whether you want to travel, buy a vehicle, or build long-term wealth, deliberate budgeting turns distant dreams into line items with clear timelines.</li>
       </ul>
 
       <h3 className="text-xl font-editorial-serif font-bold text-stone-900 mt-8 mb-3">
@@ -82,7 +109,14 @@ const BudgetingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
         Step 2: Differentiating Fixed Versus Variable Expenses
       </h3>
       <p>
-        Effective personal budgeting tips always insist on separating your expenditures into two distinct buckets: fixed expenses and variable expenses.
+        Effective personal budgeting tips always insist on separating your expenditures into two distinct buckets: fixed expenses and variable expenses. If your variable costs are straining your paycheck, explore our actionable strategies on{' '}
+        <button
+          onClick={() => onNavigate('/save-money-on-low-income/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          how to save money on a low income
+        </button>{' '}
+        to audit food, mobile phone, and utility subscriptions.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
         <div className="bg-white p-5 rounded-lg border border-stone-200">
@@ -311,14 +345,33 @@ const SavingLowIncomeArticle: React.FC<{ onNavigate: (path: string) => void }> =
         A widespread misconception is that savings only become possible once you land a six-figure salary. While a higher income undoubtedly expands your financial margin, saving is primarily a behavioral skill rather than an income threshold. Individuals earning generous salaries frequently spend every penny they make through unmonitored lifestyle creep.
       </p>
       <p>
-        Conversely, building the habit of setting aside $15 each week instills the discipline, vigilance, and psychological resilience needed to manage larger sums later in life. That modest $15 weekly transfer amounts to $780 in a single year—enough to repair a blown automobile alternator or replace a broken appliance without descending into credit card debt.
+        Conversely, building the habit of setting aside $15 each week instills the discipline, vigilance, and psychological resilience needed to manage larger sums later in life. That modest $15 weekly transfer amounts to $780 in a single year—acting as your initial{' '}
+        <button
+          onClick={() => onNavigate('/emergency-fund-guide/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          starter emergency fund reserve
+        </button>{' '}
+        to repair a blown automobile alternator or replace a broken appliance without descending into{' '}
+        <button
+          onClick={() => onNavigate('/credit-score-basics/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          high-interest credit card debt and credit score damage
+        </button>.
       </p>
 
       <h3 className="text-xl font-editorial-serif font-bold text-stone-900 mt-8 mb-3">
         Identifying and Eliminating Invisible Budget Leaks
       </h3>
       <p>
-        When money is tight, you cannot afford &quot;invisible leaks&quot;—small, automated fees that drip from your checking account without delivering tangible value. Conduct an honest line-by-line bank audit:
+        When money is tight, you cannot afford &quot;invisible leaks&quot;—small, automated fees that drip from your checking account without delivering tangible value. Conduct an honest line-by-line audit using our{' '}
+        <button
+          onClick={() => onNavigate('/budgeting-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          step-by-step monthly budgeting framework
+        </button>:
       </p>
       <ul className="list-disc pl-6 space-y-2 my-4 text-stone-700">
         <li><strong>Zombie subscriptions:</strong> Streaming services, gym memberships, app subscriptions, or magazine trials you have not used in the past 30 days should be canceled immediately. You can always re-subscribe later if genuinely missed.</li>
@@ -388,7 +441,20 @@ const SavingLowIncomeArticle: React.FC<{ onNavigate: (path: string) => void }> =
         Relying on willpower to save money is a losing strategy. By the end of the month, unexpected demands on your cash inevitably appear. The most successful saving technique is the <strong>&quot;Pay Yourself First&quot;</strong> rule.
       </p>
       <p>
-        Establish an automatic transfer through your online banking portal to trigger the exact morning your paycheck lands. Transferring even $15 or $25 directly into an isolated high-yield savings account ensures the money is removed from your everyday checking account before you make discretionary decisions.
+        Establish an automatic transfer through your online banking portal to trigger the exact morning your paycheck lands. Transferring even $15 or $25 directly into an isolated{' '}
+        <button
+          onClick={() => onNavigate('/emergency-fund-guide/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          High-Yield Savings Account (HYSA)
+        </button>{' '}
+        ensures the money is removed from your everyday checking account before you make discretionary decisions. Once you accumulate a comfortable buffer and eliminate consumer debt, you can channel those recurring automated transfers into{' '}
+        <button
+          onClick={() => onNavigate('/investing-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          investing for beginners in low-cost index funds
+        </button>.
       </p>
       <p>
         If your checking and savings accounts are housed at the same bank and tempting to tap with a debit card, open your emergency savings at a completely separate online banking institution. The 24-to-48 hour ACH transfer delay acts as a built-in mental firewall that prevents impulsive spending.
@@ -483,10 +549,31 @@ const EmergencyFundArticle: React.FC<{ onNavigate: (path: string) => void }> = (
         How to Estimate Your Essential Monthly Expenses
       </h3>
       <p>
-        When determining how much emergency savings do I need, beginners frequently make the error of multiplying their total monthly paycheck by 6. This leads to an unnecessarily bloated savings target that can delay other important financial goals like paying down debt or investing.
+        When determining how much emergency savings do I need, beginners frequently make the error of multiplying their total monthly paycheck by 6. This leads to an unnecessarily bloated savings target that can delay other important financial goals like{' '}
+        <button
+          onClick={() => onNavigate('/debt-management/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          paying off high-interest debt
+        </button>{' '}
+        or{' '}
+        <button
+          onClick={() => onNavigate('/investing-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          investing in index funds
+        </button>
+        .
       </p>
       <p>
-        An emergency fund only needs to cover <strong>essential baseline expenses</strong>—the absolute bare minimum required to maintain shelter, health, and basic nourishment during a crisis. To find your number, calculate:
+        An emergency fund only needs to cover <strong>essential baseline expenses</strong>—the absolute bare minimum required to maintain shelter, health, and basic nourishment during a crisis. To find your number, calculate your fixed survival costs using our{' '}
+        <button
+          onClick={() => onNavigate('/budgeting-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          beginner monthly budget framework
+        </button>
+        :
       </p>
       <ul className="list-disc pl-6 space-y-2 my-4 text-stone-700">
         <li><strong>Housing:</strong> Rent or mortgage payment, plus property tax and renters insurance.</li>
@@ -494,7 +581,13 @@ const EmergencyFundArticle: React.FC<{ onNavigate: (path: string) => void }> = (
         <li><strong>Food:</strong> Modest grocery bills (excluding dining out, takeout, or alcohol).</li>
         <li><strong>Health:</strong> Essential health insurance premiums and vital prescription medications.</li>
         <li><strong>Transportation:</strong> Fuel or public transit passes needed for essential mobility.</li>
-        <li><strong>Minimum debt service:</strong> The bare legal minimum payments on student loans or credit cards to protect your credit score from default.</li>
+        <li><strong>Minimum debt service:</strong> The bare legal minimum payments on student loans or credit cards to protect your{' '}
+        <button
+          onClick={() => onNavigate('/credit-score-basics/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          credit score from delinquency marks
+        </button>.</li>
       </ul>
       <p>
         If your total monthly income is $3,500, but your essential survival expenses total $2,100, your 3-month target is $6,300, and your 6-month target is $12,600.
@@ -510,13 +603,28 @@ const EmergencyFundArticle: React.FC<{ onNavigate: (path: string) => void }> = (
         <div className="bg-white p-5 rounded-lg border border-stone-200">
           <h4 className="font-editorial-serif text-lg font-bold text-stone-900 mb-1">The Gold Standard: High-Yield Savings Accounts (HYSA)</h4>
           <p className="text-sm text-stone-700 leading-relaxed">
-            Unlike traditional brick-and-mortar savings accounts that pay a negligible 0.01% annual percentage yield (APY), online HYSAs typically pay competitive rates (often 3.5% to 5.0% depending on central bank benchmark rates). Most importantly, ensure the financial institution is backed by government deposit insurance—such as the <strong>FDIC</strong> in the United States (insuring deposits up to $250,000 per depositor), the <strong>FSCS</strong> in the United Kingdom (up to £85,000), or the <strong>CDIC</strong> in Canada.
+            Unlike traditional brick-and-mortar savings accounts that pay a negligible 0.01% annual percentage yield (APY), online HYSAs typically pay competitive rates (often 3.5% to 5.0% depending on central bank benchmark rates). Most importantly, ensure the financial institution is backed by government deposit insurance—such as{' '}
+            <a
+              href="https://www.fdic.gov/resources/consumers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A]"
+            >
+              FDIC deposit insurance (Federal Deposit Insurance Corporation)
+            </a>{' '}
+            in the United States (insuring deposits up to $250,000 per depositor), the <strong>FSCS</strong> in the United Kingdom (up to £85,000), or the <strong>CDIC</strong> in Canada.
           </p>
         </div>
         <div className="bg-white p-5 rounded-lg border border-stone-200">
           <h4 className="font-editorial-serif text-lg font-bold text-stone-900 mb-1">Where NOT to Keep It</h4>
           <p className="text-sm text-stone-700 leading-relaxed">
-            Never invest your emergency fund in stocks, mutual funds, certificates of deposit (CDs) with stiff early withdrawal penalties, or volatile digital assets. If a recession hits, you might lose your job at the exact moment the stock market drops 30%, forcing you to liquidate shares at an enormous loss just to pay rent.
+            Never invest your emergency fund in stocks, mutual funds, certificates of deposit (CDs) with stiff early withdrawal penalties, or volatile digital assets. If a recession hits, you might lose your job at the exact moment the stock market drops 30%, forcing you to liquidate shares at an enormous loss just to pay rent. Learn more about market volatility in our{' '}
+            <button
+              onClick={() => onNavigate('/investing-for-beginners/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              investing for beginners guide
+            </button>.
           </p>
         </div>
       </div>
@@ -649,7 +757,14 @@ const CreditScoreArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ 
             <span className="text-xs font-mono font-semibold text-[#143826] bg-[#EBF1EA] px-2 py-0.5 rounded">High Impact</span>
           </div>
           <p className="text-sm text-stone-700 leading-relaxed">
-            Credit utilization refers to the percentage of your total available revolving credit that you are actively using. For instance, if you have a credit card with a $2,000 credit limit and a balance of $1,000, your utilization ratio is 50%. Financial educators recommend keeping your overall utilization below 30%, with under 10% considered optimal for top credit health.
+            Credit utilization refers to the percentage of your total available revolving credit that you are actively using. For instance, if you have a credit card with a $2,000 credit limit and a balance of $1,000, your utilization ratio is 50%. Financial educators recommend keeping your overall utilization below 30%, with under 10% considered optimal for top credit health. If revolving balances are currently elevated, apply our{' '}
+            <button
+              onClick={() => onNavigate('/debt-management/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              debt management and elimination frameworks
+            </button>{' '}
+            to rapidly drive utilization downward.
           </p>
         </div>
 
@@ -681,7 +796,25 @@ const CreditScoreArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ 
         Your credit score is calculated directly from the raw data contained in your credit reports. If a credit bureau has incorrect information—such as an erroneous late payment, a misspelled name linking you to someone else&apos;s debt, or fraudulent accounts opened by identity thieves—your score will plummet unfairly.
       </p>
       <p>
-        Under U.S. Federal Law, consumers are legally entitled to obtain free copies of their credit reports from the three nationwide credit bureaus (Equifax, Experian, and TransUnion) via <strong>AnnualCreditReport.com</strong>. Checking your own credit report is a &quot;soft inquiry&quot; and will never hurt your score. Scrutinize your report annually for unrecognized addresses, delinquent balances you do not owe, or unfamiliar account openings.
+        Under U.S. Federal Law, consumers are legally entitled to obtain free copies of their credit reports from the three nationwide credit bureaus (Equifax, Experian, and TransUnion) via{' '}
+        <a
+          href="https://www.annualcreditreport.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A]"
+        >
+          AnnualCreditReport.com (Official Federal Credit Portal)
+        </a>
+        . Checking your own credit report is a &quot;soft inquiry&quot; and will never hurt your score. Scrutinize your report annually for unrecognized addresses, delinquent balances you do not owe, or unfamiliar account openings. You can also consult the{' '}
+        <a
+          href="https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A]"
+        >
+          CFPB Credit Reports and Scores educational portal
+        </a>{' '}
+        for dispute guides.
       </p>
 
       <h3 className="text-xl font-editorial-serif font-bold text-stone-900 mt-8 mb-3">
@@ -690,7 +823,14 @@ const CreditScoreArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ 
       <ul className="list-disc pl-6 space-y-3 my-4 text-stone-700">
         <li>
           <strong>Myth: &quot;You need to carry a balance and pay interest to build credit.&quot;</strong><br />
-          This is completely false and costs beginners hundreds of dollars in unnecessary interest. You should pay your statement balance in full every single month before the due date. You receive all the positive payment history credit without paying a cent in finance charges.
+          This is completely false and costs beginners hundreds of dollars in unnecessary interest. You should pay your statement balance in full every single month before the due date. Managing your cash flow with a{' '}
+          <button
+            onClick={() => onNavigate('/budgeting-for-beginners/')}
+            className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+          >
+            simple monthly budget
+          </button>{' '}
+          guarantees that you never charge more than you can immediately pay off.
         </li>
         <li>
           <strong>Myth: &quot;Closing an old unused card immediately improves your score.&quot;</strong><br />
@@ -698,7 +838,14 @@ const CreditScoreArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ 
         </li>
         <li>
           <strong>Myth: &quot;Checking your score lowers it.&quot;</strong><br />
-          Checking your own score through your banking app or credit monitoring tool is a soft inquiry. Only formal applications for credit initiated by lenders (hard inquiries) cause temporary minor dips.
+          Checking your own score through your banking app or credit monitoring tool is a soft inquiry. Only formal applications for credit initiated by lenders (hard inquiries) cause temporary minor dips. Maintaining an{' '}
+          <button
+            onClick={() => onNavigate('/emergency-fund-guide/')}
+            className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+          >
+            emergency fund buffer
+          </button>{' '}
+          ensures unexpected life shocks do not force you into emergency credit applications.
         </li>
       </ul>
 
@@ -768,7 +915,13 @@ const InvestingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
         <div className="bg-white p-5 rounded-lg border border-stone-200">
           <h4 className="font-editorial-serif text-lg font-bold text-stone-900 mb-2">Saving (Capital Preservation)</h4>
           <p className="text-sm text-stone-700 leading-relaxed">
-            Putting money into risk-free, government-insured deposit accounts (like checking accounts or high-yield savings accounts). Your principal is protected against loss, but interest rates often barely match or trail inflation. Best for short-term goals (0 to 3 years) and emergency reserves.
+            Putting money into risk-free, government-insured deposit accounts (like checking accounts or high-yield savings accounts). Your principal is protected against loss, but interest rates often barely match or trail inflation. Best for short-term goals (0 to 3 years) and safety nets. Learn how to build your cash reserve in our{' '}
+            <button
+              onClick={() => onNavigate('/emergency-fund-guide/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              beginner emergency fund guide
+            </button>.
           </p>
         </div>
         <div className="bg-white p-5 rounded-lg border border-stone-200">
@@ -880,17 +1033,24 @@ const InvestingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
       </p>
       <ol className="list-decimal pl-6 space-y-3 my-4 text-stone-700">
         <li>
-          <strong>Eliminate high-interest consumer debt:</strong> If you are carrying a credit card balance with an interest rate of 22% APR, paying off that card delivers a guaranteed, risk-free 22% return on your money. No investment in the world can sustainably beat that. Paying off toxic credit card debt must always precede investing.
+          <strong>Eliminate high-interest consumer debt:</strong> If you are carrying a credit card balance with an interest rate of 22% APR, paying off that card delivers a guaranteed, risk-free 22% return on your money. No investment in the world can sustainably beat that. Consult our comprehensive guide on{' '}
+          <button
+            onClick={() => onNavigate('/debt-management/')}
+            className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+          >
+            debt management and elimination strategies
+          </button>{' '}
+          to prioritize credit card payoff before investing.
         </li>
         <li>
           <strong>Fund your emergency cash reserve:</strong> Having at least 3 months of essential expenses tucked safely inside an insured high-yield savings account ensures that an unexpected medical emergency or auto repair will never force you to sell your investments at an inopportune market low. Review our{' '}
           <button
             onClick={() => onNavigate('/emergency-fund-guide/')}
-            className="text-[#143826] font-semibold underline hover:text-[#0D261A] cursor-pointer"
+            className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
           >
-            Emergency Fund Guide
+            Emergency Fund Guide for Beginners
           </button>{' '}
-          to verify your emergency cushion.
+          to calculate and verify your emergency cushion.
         </li>
       </ol>
 
@@ -898,7 +1058,13 @@ const InvestingArticle: React.FC<{ onNavigate: (path: string) => void }> = ({ on
         Conclusion & Next Steps
       </h3>
       <p>
-        Successful investing is rarely exciting; it is disciplined, automated, and long-term. By avoiding emotional panic during market drops, prioritizing broad diversification, keeping expense ratios low, and giving compound interest decades to work, beginners can harness the global economy to build lasting financial independence.
+        Successful investing is rarely exciting; it is disciplined, automated, and long-term. By avoiding emotional panic during market drops, prioritizing broad diversification, keeping expense ratios low, and giving compound interest decades to work, beginners can harness the global economy to build lasting financial independence. To establish the monthly cash surplus needed to fund your investments, master our{' '}
+        <button
+          onClick={() => onNavigate('/budgeting-for-beginners/')}
+          className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+        >
+          step-by-step beginner budgeting guide
+        </button>.
       </p>
     </div>
   );

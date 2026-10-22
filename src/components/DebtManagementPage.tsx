@@ -142,7 +142,14 @@ export const DebtManagementPage: React.FC<DebtManagementPageProps> = ({ onNaviga
               <strong>Negotiate lower interest rates:</strong> Call your card issuers. If you have made on-time payments for six months, ask politely for a temporary hardship rate or promotional APR reduction. Many issuers will lower a 24% APR to 16%–18% upon request.
             </li>
             <li>
-              <strong>Freeze credit card usage:</strong> Remove saved card numbers from Amazon and food delivery apps. Switch exclusively to cash or your debit card while in payoff mode.
+              <strong>Freeze credit card usage:</strong> Remove saved card numbers from Amazon and food delivery apps. Switch exclusively to cash or your debit card while in payoff mode. Build an accurate spending plan using our{' '}
+              <button
+                onClick={() => onNavigate('/budgeting-for-beginners/')}
+                className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+              >
+                beginner monthly budgeting guide
+              </button>{' '}
+              to uncover additional margin.
             </li>
             <li>
               <strong>Roll freed-up cash into the next target:</strong> When your first card is paid off, take the full amount you were paying toward it and add it to the minimum of the next card in line. This creates an accelerating debt payoff snowball.
@@ -152,7 +159,16 @@ export const DebtManagementPage: React.FC<DebtManagementPageProps> = ({ onNaviga
           <div className="bg-amber-50 border border-amber-200/80 p-5 rounded-lg my-6 not-prose flex items-start gap-3">
             <ShieldAlert className="w-5 h-5 text-amber-800 shrink-0 mt-0.5" />
             <div className="text-xs sm:text-sm text-stone-700 leading-relaxed">
-              <strong className="text-amber-900">Avoid Predatory Debt Traps:</strong> Never turn to payday loans, auto title loans, or predatory high-fee debt settlement companies that tell you to stop paying your creditors. If overwhelmed, reach out to an accredited nonprofit credit counseling agency via the <strong>National Foundation for Credit Counseling (NFCC.org)</strong> for a free, confidential Debt Management Plan (DMP).
+              <strong className="text-amber-900">Avoid Predatory Debt Traps:</strong> Never turn to payday loans, auto title loans, or predatory high-fee debt settlement companies that tell you to stop paying your creditors. If overwhelmed, reach out to an accredited nonprofit credit counseling agency via the{' '}
+              <a
+                href="https://www.nfcc.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#143826] font-semibold underline hover:text-[#0D261A]"
+              >
+                National Foundation for Credit Counseling (NFCC.org)
+              </a>{' '}
+              for a free, confidential Debt Management Plan (DMP).
             </div>
           </div>
 
@@ -163,7 +179,27 @@ export const DebtManagementPage: React.FC<DebtManagementPageProps> = ({ onNaviga
             Eliminating high-interest debt is equivalent to locking in an extraordinary, risk-free rate of return. If you pay off a $3,000 credit card balance charging 22% APR, you are effectively earning a guaranteed 22% after-tax return on that money—something the stock market can never guarantee.
           </p>
           <p>
-            Once your consumer debt is eliminated, redirect that monthly payment power into your emergency fund and low-cost index funds to build generational security.
+            Once your consumer debt is eliminated, redirect that monthly payment power into your{' '}
+            <button
+              onClick={() => onNavigate('/emergency-fund-guide/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              3-to-6 month emergency fund
+            </button>{' '}
+            and{' '}
+            <button
+              onClick={() => onNavigate('/investing-for-beginners/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              long-term low-cost index funds
+            </button>{' '}
+            to build generational security and preserve your{' '}
+            <button
+              onClick={() => onNavigate('/credit-score-basics/')}
+              className="text-[#143826] font-semibold underline hover:text-[#0D261A] transition-colors cursor-pointer"
+            >
+              positive credit history
+            </button>.
           </p>
         </div>
 

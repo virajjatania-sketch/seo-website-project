@@ -31,27 +31,37 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     {
       number: '01',
       title: 'Intentional Budgeting',
-      description: 'Master how to calculate net take-home pay, differentiate fixed vs. variable obligations, and allocate cash intentionally with the 50/30/20 framework.'
+      description: 'Master how to calculate net take-home pay, differentiate fixed vs. variable obligations, and allocate cash intentionally with the 50/30/20 framework.',
+      path: '/budgeting-for-beginners/',
+      anchorText: 'Read Budgeting for Beginners Guide'
     },
     {
       number: '02',
       title: 'Sustainable Micro-Saving',
-      description: 'Learn realistic ways to audit subscriptions, lower recurring grocery and utility bills, and automate small weekly transfers without extreme deprivation.'
+      description: 'Learn realistic ways to audit subscriptions, lower recurring grocery and utility bills, and automate small weekly transfers without extreme deprivation.',
+      path: '/save-money-on-low-income/',
+      anchorText: 'Read How to Save on a Low Income'
     },
     {
       number: '03',
       title: 'Liquid Emergency Reserves',
-      description: 'Calculate your true essential survival number and establish a safe 3-to-6 month cash cushion housed in an insured High-Yield Savings Account (HYSA).'
+      description: 'Calculate your true essential survival number and establish a safe 3-to-6 month cash cushion housed in an insured High-Yield Savings Account (HYSA).',
+      path: '/emergency-fund-guide/',
+      anchorText: 'Read Emergency Fund Guide'
     },
     {
       number: '04',
       title: 'Credit Score Foundations',
-      description: 'Deconstruct the 5 credit factors, understand payment history and utilization ratio, debunk dangerous credit myths, and avoid costly mistakes.'
+      description: 'Deconstruct the 5 credit factors, understand payment history and utilization ratio, debunk dangerous credit myths, and avoid costly mistakes.',
+      path: '/credit-score-basics/',
+      anchorText: 'Read Credit Score Basics Guide'
     },
     {
       number: '05',
       title: 'Patient Long-Term Investing',
-      description: 'Understand the difference between saving and investing, harness low-cost index funds and diversification, and let compound growth build lasting wealth.'
+      description: 'Understand the difference between saving and investing, harness low-cost index funds and diversification, and let compound growth build lasting wealth.',
+      path: '/investing-for-beginners/',
+      anchorText: 'Read Investing for Beginners Guide'
     }
   ];
 
@@ -178,6 +188,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     {pillar.description}
                   </p>
                 </div>
+                <div className="mt-5 pt-3 border-t border-stone-200/80">
+                  <button
+                    onClick={() => onNavigate(pillar.path)}
+                    className="text-xs font-semibold text-[#143826] hover:underline inline-flex items-center gap-1 cursor-pointer"
+                  >
+                    <span>{pillar.anchorText}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
               </div>
             ))}
             
@@ -278,7 +297,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                       {article.wordCount} words
                     </span>
                     <span className="text-xs font-semibold text-[#143826] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                      <span>Read Guide</span>
+                      <span>Read {article.category} Guide</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </span>
                   </div>
