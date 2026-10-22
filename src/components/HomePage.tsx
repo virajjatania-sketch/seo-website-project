@@ -62,7 +62,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         description="Simple Money Lessons for a Smarter Financial Future. Discover clear, comprehensive beginner guides on budgeting, saving on a low income, emergency funds, credit scores, and investing."
         canonicalUrl="https://moneywisestarter.edu/"
         type="website"
-        image="https://moneywisestarter.edu/src/assets/images/hero_finance_desk_1792515944213.jpg"
+        image="https://moneywisestarter.edu/images/hero_finance_desk.jpg"
         structuredData={websiteStructuredData}
       />
 
@@ -128,7 +128,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-stone-200 bg-stone-100 shadow-sm aspect-[16/9] sm:aspect-[4/3] lg:aspect-square">
                 <img
-                  src="/src/assets/images/hero_finance_desk_1792515944213.jpg"
+                  src="/images/hero_finance_desk.jpg"
                   alt="Warm natural-lit desk with open budget ledger, coffee, brass lamp, and fountain pen"
                   className="w-full h-full object-cover"
                   loading="eager"

@@ -161,6 +161,10 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ article, onNavigate })
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]"
               referrerPolicy="no-referrer"
               loading="eager"
+              onError={(e) => {
+                // Graceful fallback to styled neutral background if network stalls
+                (e.currentTarget as HTMLElement).style.display = 'none';
+              }}
             />
           </div>
           <figcaption className="text-xs text-stone-500 mt-2.5 text-center italic font-editorial-serif">
